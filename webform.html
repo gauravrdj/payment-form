@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylingform.css">
+    <title>payment form</title>
+    
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="heading">Payment Form</h1>
+        <h2>Personal Details</h2>
+        <p>required fields are followed by *</p>
+        <p>Name:* <input type="text" name="name" id="" required placeholder="Gaurav Sharma"></p>
+        <fieldset>
+            <legend>Gender</legend>
+        <p>
+           Male*<input type="radio" name="gender" id="" required>
+           Female*<input type="radio" name="gender" id="" required>
+        </p>
+    </fieldset>
+    <p>Address: <textarea name="address" id="" cols="85" rows="6" optional placeholder="Enter Your Address Here"></textarea></p>
+    <p>Mail*: <input type="email" name="email" id="" required placeholder="example@gmail.com"></p>
+    <p>Pincode: <input type="number" name="pincode" id="" optional placeholder="302003"></p>
+    <hr>
+    <fieldset>
+        <h2>Payment Details</h2>
+        <p>Card Type*: 
+            <select name="Card_Type" id="card_type" required>
+                <option value="">--select a card type--</option>
+                <option value="VISA">VISA</option>
+                <option value="RUPAY">RUPAY</option>
+                <option value="MASTER CARD">MASTER CARD </option>
+                 </select>
+                 </p>
+                 <P>Card Number*: <input type="number" name="card number" id="card number" required placeholder="123456789"></P>
+                 <p>Expiry Date*: <input type="date" name="date" id="date" required placeholder="dd/mm/yyyy"></p>
+                 <p>CVV*: <input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+    </fieldset>
+    <input type="SUBMIT" value="Pay Now">
+</div>
+    </form>
+</body>
+</html>
